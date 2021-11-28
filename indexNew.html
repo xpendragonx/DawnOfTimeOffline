@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.5">
+
+  </head>
+  <body id = "id" style = "background-color: hsl(0, 0%, 0%);">
+    <h1>Time: <span id="gameClock"></span></h1>
+    <p style ="font-family:monospace; white-space: pre;" id="monument"></p>  
+    
+    <button class = "jobs" id="lightFireBtn">Light Fire!</button>
+    <button class = "jobs" id ="gatherBtn" style="display : none">Gather</button>
+    <button  class = "jobs" id="buildMonumentBtn" style="display : none">Build Monument</button>
+    
+    <div id="plantBeanDiv" style="display : none">
+      <h3>Wood: <span id="wood"></span></h3>
+      <h3>Beans: <span id="beans"></span></h3>            
+      <button class = "jobs" id="plantBeanBtn">Plant Bean</button>
+      <button class = "jobs" id="harvestBeanBtn" style="display : none">Harvest Bean</button>
+      <p class="farm" id="beanArray"></p>
+      <hr>
+    </div> 
+    
+    <div id="monumentDiv" style="display : none">
+      <h4>Beans needed for next block: <span id="beansNeeded"></span></h4>      
+      <button  class = "jobs" id="collectBlockBtn">Collect Block</button>
+      <p  class = "jobs" >Blocks: <span id="blocks"></span></p>     
+      <hr>
+    </div> 
+    
+    <div id="shelterDiv" style="display : none">
+      <h4>Wood needed for next shelter: <span id="woodNeeded"></span></h4>
+      <button  class="jobs" id="buildShelterBtn">Build Shelter</button>
+      <p class="jobs" >Shelters: <span id="shelters"></span></p>
+    </div> 
+    
+    <div id="citizenDiv" class ="jobs-div" style="display : none">
+      <h4 >Number of citizens: <span id="citizens"></span>/<span id="totalCitizens"></span></h4>
+      <div class = "job-row">
+      <button class="jobs" id="addGathering">&#9650</button><button class="jobs" id="subGathering">&#9660</button><p class="jobs">Gathering: </p><span  class="jobs" id="citizensGathering"></span>
+      </div>
+      
+      <div class = "job-row">
+        <button class="jobs" id="addPlanting">&#9650</button><button class="jobs" id="subPlanting">&#9660</button><p class="jobs">Plainting: </p><span  class="jobs" id="citizensPlanting"></span>
+      </div>
+      
+      <div class = "job-row">
+        <button class="jobs" id="addHarvesting">&#9650</button><button class="jobs" id="subHarvesting">&#9660</button><p class="jobs">Harvesting: </p><span  class="jobs" id="citizensHarvesting"></span>
+      </div>
+    </div>
+    
+    <div style="display : none">
+    <p >Event Log: <span id="question"></span></p>
+    <button id="testButtonA">A</button>
+    <button id="testButtonB">B</button>
+    <button id="backButton">Back</button>
+    </div>
+      
+    <div id="myDIV" style="display : none">
+      <p id="answer">The code to find your spirit animal is...<span id="ei"></span></p>
+    <button onclick="window.open('https://www.google.com/search?q=myers+briggs+animal+types&tbm=isch&ved=2ahUKEwiXo_TJtZDzAhUQ3p4KHe1IDpYQ2-cCegQIABAA&oq=myers+briggs+animal&gs_lcp=CgNpbWcQARgBMgQIABBDMgUIABCABDIFCAAQgAQyBggAEAgQHjIECAAQGDIECAAQGDIECAAQGDIECAAQGDIECAAQGDIECAAQGFDHZFjHZGC2eWgAcAB4AIABTogBTpIBATGYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=If9JYdeOH5C8-wTtkbmwCQ&bih=577&biw=1280&rlz=1C1GCEB_enUS862US862&safe=active&ssui=on#imgrc=ilwCbA89P6K5rM', '_blank')">
+      Click here to use the code...
+    </button>
+      
+      </div>
+    <p></p>
+    <script src="ziggurat.js"></script>
+    <script src="sketch.js"></script>
+  </body>
+</html>

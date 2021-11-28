@@ -1,0 +1,35 @@
+html, body {
+  margin: 1;
+  padding: 1;
+
+  
+}
+
+.id {
+ 
+}
+
+.farm {
+  width: 200px; 
+  word-wrap: break-word;
+}
+
+.jobs-div {
+  width: 200px;
+  padding: 6px;
+  border-style: solid;
+}
+
+.jobs {
+  display: inline-block;
+  padding: 3px;
+}
+
+.job-row {
+  padding-bottom: 1px;
+  margin-bottom: 1px;
+}
+
+canvas {
+  display: block;
+}

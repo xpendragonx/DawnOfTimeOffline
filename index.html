@@ -1,0 +1,74 @@
+<!DOCTYPE html><html lang="en"><head>
+    <script src="p5.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.5">
+
+  </head>
+  <body id="id" style="background-color: hsl(0, 0%, 0%);">
+    <h1>Time: <span id="gameClock"></span><a id="win" href="https://docs.google.com/forms/d/e/1FAIpQLSe-YHswwymvXBm5eEkj0Xlfi6k6f9sKyfM5SDAjRs9JWZIEdw/viewform?usp=sf_link" style="visibility : hidden">Click Here</a></h1>
+    <p style="font-family:monospace; white-space: pre;" id="monument"></p>  
+    <div>
+    <button class="jobs" id="lightFireBtn">Light Fire!</button>
+    <button class="jobs" id="gatherBtn" style="visibility : hidden">Gather</button>
+    <button class="jobs" id="buildMonumentBtn" style="visibility : hidden">Build Monument</button>
+    </div>
+    
+    <div id="plantBeanDiv" style="visibility : hidden">
+      <h3>Wood: <span id="wood"></span></h3>
+      <h3>Beans: <span id="beans"></span></h3>            
+      <button class="jobs" id="plantBeanBtn">Plant Bean</button>
+      <button class="jobs" id="harvestBeanBtn" style="visibility : hidden">Harvest Bean</button>
+      <p class="farm" id="beanArray"></p>
+      <hr>
+    </div> 
+    
+    <div id="shelterDiv" style="visibility : hidden">
+      <h4>Wood needed for next shelter: <span id="woodNeeded"></span></h4>
+      <button class="jobs" id="buildShelterBtn">Build Shelter</button>
+      <p class="jobs">Shelters: <span id="shelters"></span></p>
+    </div> 
+    
+    <div id="citizenDiv" class="jobs-div" style="visibility : hidden">
+      <h4>Number of citizens: <span id="citizens"></span>/<span id="totalCitizens"></span></h4>
+      <div class="job-row">
+      <button class="jobs" id="addGathering">▲</button><button class="jobs" id="subGathering">▼</button><p class="jobs">Gathering: </p><span class="jobs" id="citizensGathering"></span>
+      </div>
+      
+      <div class="job-row">
+        <button class="jobs" id="addPlanting">▲</button><button class="jobs" id="subPlanting">▼</button><p class="jobs">Plainting: </p><span class="jobs" id="citizensPlanting"></span>
+      </div>
+      
+      <div class="job-row">
+        <button class="jobs" id="addHarvesting">▲</button><button class="jobs" id="subHarvesting">▼</button><p class="jobs">Harvesting: </p><span class="jobs" id="citizensHarvesting"></span>
+      </div>
+    </div>
+    
+    <div id="monumentDiv" style="visibility : hidden">
+      <h4>Beans needed for next block: <span id="beansNeeded"></span></h4>      
+      <button class="jobs" id="collectBlockBtn">Collect Block</button>
+      <p class="jobs">Blocks: <span id="blocks"></span></p>     
+      <hr>
+    </div> 
+    
+    <div style="visibility : hidden">
+    <p>Event Log: <span id="question"></span></p>
+    <button id="testButtonA">A</button>
+    <button id="testButtonB">B</button>
+    <button id="backButton">Back</button>
+    </div>
+      
+    <div id="myDIV" style="visibility : hidden">
+      <p id="answer">The code to find your spirit animal is...<span id="ei"></span></p>
+    <button onclick="window.open('https://www.google.com/search?q=myers+briggs+animal+types&amp;tbm=isch&amp;ved=2ahUKEwiXo_TJtZDzAhUQ3p4KHe1IDpYQ2-cCegQIABAA&amp;oq=myers+briggs+animal&amp;gs_lcp=CgNpbWcQARgBMgQIABBDMgUIABCABDIFCAAQgAQyBggAEAgQHjIECAAQGDIECAAQGDIECAAQGDIECAAQGDIECAAQGDIECAAQGFDHZFjHZGC2eWgAcAB4AIABTogBTpIBATGYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&amp;sclient=img&amp;ei=If9JYdeOH5C8-wTtkbmwCQ&amp;bih=577&amp;biw=1280&amp;rlz=1C1GCEB_enUS862US862&amp;safe=active&amp;ssui=on#imgrc=ilwCbA89P6K5rM', '_blank')">
+      Click here to use the code...
+    </button>
+      
+      </div>
+    <p></p>
+    <script src="ziggurat.js"></script>
+    <script src="sketch.js"></script>
+  
+
+</body></html>
